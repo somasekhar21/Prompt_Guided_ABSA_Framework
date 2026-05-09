@@ -38,13 +38,18 @@ def load_embedding_model():
 
 def load_llm_model():
     try:
+        api_key = os.getenv("OLLAMA_API_KEY")
+        base_url = os.getenv("OLLAMA_BASE_URL", "https://ollama.com")
+        
         model = ChatOllama(
             model="gemma4:31b-cloud",
-            base_url="https://ollama.com",
+            base_url=base_url,
             num_ctx=8192,
             temperature=0,
             top_k=10,
-            top_p=0.9
+            top_p=0.9,
+            # If the cloud provider requires an API key in headers
+            additional_kwargs={"headers": {"Authorization": f"Bearer {api_key}"}} if api_key else {}
         )
         return model
 

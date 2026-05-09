@@ -26,9 +26,9 @@ This framework moves beyond general sentiment analysis by identifying specific f
 ## 📋 Prerequisites
 
 1. **Python**: Version 3.13 or higher.
-2. **Ollama**: Install [Ollama](https://ollama.ai/) and pull the required model:
+2. **Ollama**: Install [Ollama](https://ollama.ai/) and pull the required model. If you are using a cloud-hosted Ollama API, ensure you have your API key and endpoint URL ready.
    ```bash
-   ollama pull llama3 # or your preferred model
+   ollama pull llama3 # for local use
    ```
 3. **SpaCy Model**:
    ```bash
@@ -52,10 +52,14 @@ This framework moves beyond general sentiment analysis by identifying specific f
    ```
 
 3. **Environment Variables**:
-   Create a `.env` file in the root directory:
+   Create a `.env` file in the root directory and add your credentials:
    ```env
-   OLLAMA_MODEL=llama3
-   EMBEDDING_MODEL=all-MiniLM-L6-v2
+   # LLM Configuration
+   OLLAMA_BASE_URL=https://ollama.com
+   OLLAMA_API_KEY=your_ollama_api_key_here
+   
+   # HuggingFace Configuration
+   HF_TOKEN=your_huggingface_token_here
    ```
 
 ## 🖥️ Usage
