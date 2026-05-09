@@ -44,7 +44,6 @@ This framework moves beyond general sentiment analysis by identifying specific f
    Create a `.env` file in the root directory and add your credentials:
    ```env
    # LLM Configuration
-   OLLAMA_BASE_URL=https://ollama.com
    OLLAMA_API_KEY=your_ollama_api_key_here
    
    # HuggingFace Configuration
@@ -62,7 +61,7 @@ python graph.py
 ### Starting the FastAPI Server
 To run the framework as a web service:
 ```bash
-python main.py
+uvicorn main:app --reload
 ```
 The API will be available at `http://localhost:8000`. You can access the Swagger UI at `http://localhost:8000/docs`.
 
