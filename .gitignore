@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environments
+.env
+.env.*
+
+# Large files and local data
+models/
+vectorstore/
+outputs/
+*.zip
+*.csv

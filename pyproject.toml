@@ -1,0 +1,26 @@
+[project]
+name = "finalyearproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.8",
+    "emoji>=2.15.0",
+    "fastapi>=0.136.1",
+    "hdbscan>=0.8.42",
+    "langchain>=1.2.13",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.23",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.1.4",
+    "nltk>=3.9.4",
+    "numpy>=2.4.4",
+    "ollama>=0.6.1",
+    "pandas>=3.0.2",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.4.1",
+    "spacy>=3.8.14",
+    "uvicorn>=0.46.0",
+]
