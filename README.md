@@ -23,17 +23,6 @@ This framework moves beyond general sentiment analysis by identifying specific f
 - **Embeddings**: Sentence-Transformers
 - **API**: FastAPI & Uvicorn
 
-## 📋 Prerequisites
-
-1. **Python**: Version 3.13 or higher.
-2. **Ollama**: Install [Ollama](https://ollama.ai/) and pull the required model. If you are using a cloud-hosted Ollama API, ensure you have your API key and endpoint URL ready.
-   ```bash
-   ollama pull llama3 # for local use
-   ```
-3. **SpaCy Model**:
-   ```bash
-   python -m spacy download en_core_web_sm
-   ```
 
 ## ⚙️ Setup & Installation
 
