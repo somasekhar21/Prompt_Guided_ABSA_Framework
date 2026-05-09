@@ -12,6 +12,7 @@ wheels/
 # Environments
 .env
 .env.*
+!.env.example
 
 # Large files and local data
 models/
